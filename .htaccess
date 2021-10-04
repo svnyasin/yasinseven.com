@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^yasinseven\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.yasinseven\.com$
+RewriteRule ^/?$ "https\:\/\/yasinseven\.com\/" [R=301,L]
+
