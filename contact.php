@@ -21,7 +21,7 @@ if($_POST['email']<>'' && $_POST['name']<>'' && $_POST['subject']<>'' && $_POST[
 		$mail->isSMTP();										
 		$mail->SMTPAuth = true;				// SMTP doğrulamayı etkinleştirir
 		$mail->Username = 'iletisim@yasinseven.com';	// SMTP kullanıcı adı (gönderici adresi)
-		$mail->Password = '@hJ7rEpuTxH';			// SMTP şifre
+		$mail->Password = '1866dbe802d682e197eb0a(encryptedRC4)';			// SMTP şifre
 		$mail->Host = 'srvc199.turhost.com';		// Mail sunucusunun adresi
 		$mail->Port = 465;				// Normal bağlantı için 587, güvenli bağlantı için 465 yazın
 		$mail->SMTPSecure = 'ssl';			// Enable TLS encryption, '' , 'ssl' , 'tls'
